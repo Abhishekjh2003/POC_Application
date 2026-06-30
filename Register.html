@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <STYLE>
+        div{
+            border: 2px solid black;
+            height: 400px;
+            width: 500px;
+        }
+        form{
+            background-color: rgb(252, 250, 250);
+        }
+    </STYLE>
+   
+</head>
+<body>
+    <center>
+          
+            <form action="" >
+                <fieldset>
+                   <legend>Registration Form </legend>
+
+
+                    <label for="">Name : </label>
+                    <input type="text" placeholder="Enter your name">   
+                    <br><br>
+                    <label for="">Age: </label>              
+                    <input type="text" placeholder="Enter your age">
+                    <br><br>
+                    <label for=""> Contact :</label>
+                    <input type="text"placeholder="Enter your contact number ">   
+                    <br><br>
+                    <label for=""> Email :</label>
+                    <input type="email"placeholder="Enter your Email ID ">   
+                    <br><br>
+                    <label for="gender">Gender :</label>
+                    <label for="gender"><input type="radio">Male</label>
+                    <label for="gender"><input type="radio">feMale</label>
+                    <br><br>
+                    <label for="">DOB: </label>
+                    <input type="date">
+                    <br><br>
+                    <label for="">Languages Known : </label>
+                    <label for=""> <input type="checkbox"> English</label>
+                    <label for=""> <input type="checkbox"> Hindi</label>
+                    <label for=""> <input type="checkbox"> Kannada</label>
+                    <label for=""> <input type="checkbox"> Japaneese</label>
+                    <br><br>
+                    <label for="" name="feedback">Feedback: </label>
+                    <textarea name="feedback" id="" ></textarea>
+                    <br><br>
+                    <label for="Country">Country</label>
+                    <select name="Country" id="">
+                        <option value="">Select</option>
+                        <option value="">India</option>
+                        <option value="">USA</option>
+                        <option value="">UAE</option>
+                        <option value="">Canada</option>
+                        <option value="">Germany</option>
+                        <option value="">Japan</option>
+                        <option value="">Brazil</option>
+                        <option value="">UK</option>
+                        <option value="">Paris</option>
+                        <option value="">Other</option>
+                    </select>
+                    <br><br>
+                    <label for="">Password : </label>
+                    <input type="password">
+                    <br><br>
+                  
+                    <center><button type="submit" (click)="form_submit()">submit</button></center>
+                    
+                
+                
+                </fieldset>
+
+            </form>
+           </div>
+    </center>
+ <script>
+    function form_submit()
+{
+  window.alert("Form Submittted");
+
+}
+ </script>
+</body>
+</html>
