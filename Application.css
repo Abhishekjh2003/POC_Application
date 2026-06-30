@@ -29,4 +29,29 @@
             border-radius: 5px;
         }
         
+#content{
+    border: 1px  solid black;
+    height: 500PX;
+    /* W: 50px; */
+    display: block;
+    justify-content: space-evenly;
+    border:none;
+}    
+
+u{
+    color:black
+}
+.inside{
+      border: 1px  solid black;
+    height: 150PX;
+    border: none;
+}
+#parent{
+    justify-content: center;
+}
+#main{
+     border: 1px  solid black;
+    height: 500PX;
+    border: none;
+}
 
