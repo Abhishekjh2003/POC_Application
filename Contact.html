@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
-    <style>
-        div{
-            background-color: burlywood;
-        }
-        label{
-            color: black;
-            font-size: large;
-        }
-    </style>
+    <link rel="stylesheet" href="Application.css">
 </head>
 <body>
-    <div style="border: 1px solid red;">
-  <center>
-    <h2>connect with us </h2>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Register.html">Register</a></li>
+        </ul>
+    </nav>
 
-    <label for="">Name :</label>
-    <input type="text" placeholder="Enter your name">
-    <br><br>
-     <label for="">Contact number :</label>
-     <input type="text" placeholder="Enter  contact number" required>
-    <br><br>
-    <label for="">Email :</label>
-    <input type="email" placeholder="Enter Email id " required>
-     <br><br>
+    <div class="page-box">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you.</p>
+        <div class="form-box">
+            <form action="">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name">
 
-    <label for="">Comments :</label>
-    <textarea name="" id="" placeholder="Any Comments...."></textarea>
-    <br><br>
-    <label for="">Attach your resume :</label>
-    <input type="file">
-    <br><br>
-    <button type ="submit" onclick="Send()">SEND</button>
+                <label>Contact Number</label>
+                <input type="text" placeholder="Enter contact number" required>
 
-  </center>  
-</div>
+                <label>Email</label>
+                <input type="email" placeholder="Enter Email ID" required>
 
-<script>
-        function Send()
-        {
-            alert("Your details are with us our team will contact you ")
+                <label>Comments</label>
+                <textarea placeholder="Any comments..."></textarea>
+
+                <button type="submit" onclick="Send()">Send</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function Send() {
+            alert("Your details are with us. Our team will contact you.");
         }
-</script>
+    </script>
 </body>
 </html>

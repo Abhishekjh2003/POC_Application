@@ -4,88 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
-    <STYLE>
-        div{
-            border: 2px solid black;
-            height: 400px;
-            width: 500px;
-        }
-        form{
-            background-color: rgb(252, 250, 250);
-        }
-    </STYLE>
-   
+    <link rel="stylesheet" href="Application.css">
 </head>
 <body>
-    <center>
-          
-            <form action="" >
-                <fieldset>
-                   <legend>Registration Form </legend>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Services.html">Services</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Register.html">Register</a></li>
+        </ul>
+    </nav>
 
+    <div class="page-box">
+        <h2>Register</h2>
+        <p>Please fill in your details.</p>
+        <div class="form-box">
+            <form action="">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" required>
 
-                    <label for="">Name : </label>
-                    <input type="text" placeholder="Enter your name" required>   
-                    <br><br>
-                    <label for="">Age: </label>              
-                    <input type="text" placeholder="Enter your age">
-                    <br><br>
-                    <label for=""> Contact :</label>
-                    <input type="text"placeholder="Enter your contact number ">   
-                    <br><br>
-                    <label for=""> Email :</label>
-                    <input type="email"placeholder="Enter your Email ID ">   
-                    <br><br>
-                    <label for="gender">Gender :</label>
-                    <label for="gender"><input type="radio">Male</label>
-                    <label for="gender"><input type="radio">feMale</label>
-                    <br><br>
-                    <label for="">DOB: </label>
-                    <input type="date">
-                    <br><br>
-                    <label for="">Languages Known : </label>
-                    <label for=""> <input type="checkbox"> English</label>
-                    <label for=""> <input type="checkbox"> Hindi</label>
-                    <label for=""> <input type="checkbox"> Kannada</label>
-                    <label for=""> <input type="checkbox"> Japaneese</label>
-                    <br><br>
-                    <label for="" name="feedback">Feedback: </label>
-                    <textarea name="feedback" id="" ></textarea>
-                    <br><br>
-                    <label for="Country">Country</label>
-                    <select name="Country" id="">
-                        <option value="">Select</option>
-                        <option value="">India</option>
-                        <option value="">USA</option>
-                        <option value="">UAE</option>
-                        <option value="">Canada</option>
-                        <option value="">Germany</option>
-                        <option value="">Japan</option>
-                        <option value="">Brazil</option>
-                        <option value="">UK</option>
-                        <option value="">Paris</option>
-                        <option value="">Other</option>
-                    </select>
-                    <br><br>
-                    <label for="">Password : </label>
-                    <input type="password" required>
-                    <br><br>
-                  
-                    <center><button type="submit" onclick="form_submit()">submit</button></center>
-                    
-                
-                
-                </fieldset>
+                <label>Age</label>
+                <input type="text" placeholder="Enter your age">
 
+                <label>Contact</label>
+                <input type="text" placeholder="Enter your contact number">
+
+                <label>Email</label>
+                <input type="email" placeholder="Enter your Email ID">
+
+                <label>Gender</label>
+                <input type="text" placeholder="Male or Female">
+
+                <label>DOB</label>
+                <input type="date">
+
+                <label>Feedback</label>
+                <textarea placeholder="Your feedback"></textarea>
+
+                <label>Country</label>
+                <select>
+                    <option>Select</option>
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UAE</option>
+                    <option>Canada</option>
+                </select>
+
+                <label>Password</label>
+                <input type="password" required>
+
+                <button type="submit" onclick="form_submit()">Submit</button>
             </form>
-           </div>
-    </center>
- <script>
-    function form_submit()
-{
-  window.alert("Form Submittted");
+        </div>
+    </div>
 
-}
- </script>
+    <script>
+        function form_submit() {
+            alert("Form Submitted");
+        }
+    </script>
 </body>
 </html>
